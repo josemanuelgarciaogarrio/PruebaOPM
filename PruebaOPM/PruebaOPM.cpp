@@ -5,9 +5,9 @@
 #include <iostream>
 #include <omp.h>
 
-#define N 50
-#define chunk 5
-#define mostrar 10
+#define N 2000
+#define chunk 300
+#define mostrar 30
 
 void imprimeArreglo(float* d);
 
@@ -21,8 +21,8 @@ int main()
 
     for (i = 0; i < N;i++)
     {
-        a[i] = i * 100;
-        b[i] = (i + 2) * 4;
+          a[i] = i * 10;
+          b[i] = (i + 3) * 3.7;
     }
 
     int pedazos = chunk;
